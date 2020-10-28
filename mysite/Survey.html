@@ -1,0 +1,121 @@
+<html>
+    <body>
+        <style>
+           h1 {
+            text-align: center;
+            width: 500px;
+            position: relative;
+            float: center;
+            margin-left: 700px;
+           }
+
+           p {
+            text-align: center;
+            width: 500px;
+            position: relative;
+            float: center;
+            margin-left: 700px;
+           }
+
+           form {
+            text-align: left;
+            width: 500px;
+            position: relative;
+            float: center;
+            margin-left: 700px;
+           }
+                      
+            .title {
+               
+            }
+
+            .description {
+
+            }
+
+            .survey-form {
+
+            }
+            .name {
+
+            }
+
+            .email {
+
+            }
+
+            .number {
+
+            }
+
+            .name-label {
+
+            }
+
+            .email-label {
+
+            }
+
+            .number-label {
+
+            }
+
+            .dropdown {
+
+            }
+
+            .submit {
+
+            }
+
+            .recommend {
+
+            }
+
+        </style>
+        <title><h1>freeCodeCamp Survey</h1></title>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <br>
+        <form id="survey-form">
+            <label id="name-label">Name
+            <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <br>
+            <label id="email-label">Email
+            <input id="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <br>
+            <label id="number-label">Age (optional)
+            <input id="number" type="number" min="0" max="120" placeholder="Age">
+            </label>
+            <br>
+            <label id="dropdown-label">Which option best describes your current role?
+            <select id="dropdown" type="text" placeholder="Select current role" required>
+                <option disabled selected value> Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+            </select>
+            </label>
+            <br>
+            <label>Would you recommend freeCodeCamp to a friend? <br>
+                <label for="definitely"><input name="recommend" value="definitely" type="radio">Definitely</label><br>
+                <label for="maybe"><input name="recommend" value="maybe" type="radio">Maybe</label><br>
+                <label for="notsure"><input name="recommend" value="notsure" type="radio">Not Sure</label><br>
+            </label>
+            <label>What would you like to see improved? <br>
+                <label for="front-end"><input name="front-end" value="front-end" type="checkbox"> Front End Projects</label><br>
+                <label for="back-end"><input name="back-end" value="back-end" type="checkbox"> Back End Projects</label><br>
+            </label><br>
+            <label>Additional Comments:
+                <textarea id="additional" placeholder="Enter your comment here..." > </textarea>
+            </label>
+
+            <br>
+            <br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

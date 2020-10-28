@@ -1,0 +1,132 @@
+<html>
+    <style>
+          :root {
+            --video: 200px;
+          }
+
+          @media (max-width: 100px) {
+              :root {
+                  --video: 100px;
+              }
+          }
+
+          #box-container {
+              display: flex;
+              height: 500px;
+              flex-direction: column;
+          }
+
+          #box-1 {
+    background-color: dodgerblue;
+    width: 50%;
+    height: 50%;
+  }
+
+  #box-2 {
+    background-color: orangered;
+    width: 50%;
+    height: 50%;
+  }
+              
+          h1 {
+            text-align: center;
+            width: 500px;
+            position: relative;
+            float: center;
+            margin-left: 700px;
+           }
+
+           p {
+            text-align: center;
+            width: 500px;
+            position: relative;
+            float: center;
+            margin-left: 700px;
+           }
+
+           form {
+            text-align: left;
+            width: 500px;
+            position: relative;
+            float: center;
+            margin-left: 700px;
+           }
+           header {
+            font-size: 32px;
+            text-align: center;
+            width: 500px;
+            position: relative;
+            float: center;
+            margin-left: 700px;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+           }
+          .header{
+
+          }
+          .head-img{
+            margin-left: 500px;
+
+          }
+          .nav-bar {
+
+          }
+          .nav-link {
+
+          }
+          .video {
+            size: var(--video, 120px);
+          }
+          .form {
+
+          }
+          .email {
+
+          }
+          .submit {
+
+          }
+
+    </style>
+    <header id="header">Handcrafted, home-made masterpieces
+        <img id="header-img" src="https://unsplash.com/photos/Pk44W0TQ2KY" alt="Top image">
+        <nav id="nav-bar">
+            <ul>
+                <li><a class="nav-link" href="#video">Video</a></li>
+                <li><a class="nav-link" href="#form">Form</a></li>
+                <li><a class="nav-link" href="#email">Email</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+        <video id="video" width="320" height="240" controls>
+            <source src="https://www.youtube.com/watch?v=Bp3b4HxseIs" type="video/mp4">
+             Your browser does not support the video tag.
+        </video>
+        <br>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+            <label id="name-label">Name
+            <input id="name" type="text" placeholder="Enter your name" required>
+            </label>
+            <br>
+            <label id="email-label">Email
+            <input id="email" name="email" type="email" placeholder="Enter your email" required>
+            </label>
+            <br>
+            <label id="number-label">Age (optional)
+            <input id="number" type="number" min="0" max="120" placeholder="Age">
+            </label>
+            <br>
+            <br>
+            <input id="submit" type="submit">Submit</input>
+            <div id="box-container">
+                <div id="box-1"></div>
+                <div id="box-2"></div>
+            </div>
+
+        </form>       
+        
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html> 

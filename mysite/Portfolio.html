@@ -1,0 +1,214 @@
+<html>
+    <body>
+        <style>
+            
+            :root {
+                --main-purple: #5c108f;
+                --main-gray: gray;
+                --main-white: white;
+            }
+            
+            @media (max-width: 75em) {
+                html {
+                    font-size: 60%;
+                }
+                }
+
+                /* 980px / 16px = 61.25em */
+                @media (max-width: 61.25em) {
+                html {
+                    font-size: 58%;
+                }
+                }
+
+                /* 460px / 16px = 28.75em */
+                @media (max-width: 28.75em) {
+                html {
+                    font-size: 55%;
+                }
+                }
+
+            body {
+                font-family: 'Calibri', sans-serif;
+                font-size: 1.8rem; /* 18px */
+                font-weight: 400;
+                line-height: 1.4;
+                background-color: gray;
+                color: var(--main-white);
+            }
+            .navbar {
+                display: flex;
+                justify-content: flex-end;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: var(--main-purple);
+                box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+                z-index: 10;
+                text-align: justify;
+
+            }
+
+            .black-border {
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                background-color: #ffffff;
+                text-align: justify;
+                display: flex;
+                <!-- margin-left: -40px; -->
+            }
+
+            .welcome-section {
+                text-align: center;
+                width: 100%;
+                height: 100vh;
+                position: relative;
+                top: 0;
+                left: 0;
+                float: center;
+                font-family: 'Calibri' sans-serif;
+                background-color: #646060;
+                color: beige;
+            }
+
+            .projects {
+                text-align: center;
+                justify-content: flex-end;
+
+                width: 100%;
+                height: 100vh;
+                position: relative;
+                top: 0;
+                left: 0;
+                float: center;
+                font-family: 'Calibri' sans-serif;
+                background-color: #0c0c0c;
+                color: beige;
+            }
+
+            .project-tile {
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                width: 11%;
+                height: 15%;
+                background-color:var(--main-purple);
+                text-align: center;
+                display: flex;
+                float: center;
+                margin-left: 800px;
+
+            }
+            .under-tile {
+                border-color: black;
+                border-width: 2px;
+                border-style: solid;
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+                width: 11%;
+                height: 8%;
+                background-color:var(--main-gray);
+                text-align: center;
+                display: flex;
+                float: center;
+                margin-left: 800px;
+
+            }
+
+            .profile-link {
+
+            }
+
+            .nav-link {
+                text-align: justify;
+                display: flex;
+
+            }
+            
+            .about-link {
+
+            }
+
+            .work-link {
+                
+            }
+
+            .contract-link {
+                
+            }
+
+            .project-link {
+                text-align: justify;
+                display: flex;
+            }
+            
+        </style>
+        <header>
+            <nav class="navbar" id="navbar">
+                <div>
+                    <div class="nav-link">
+                        <p>
+                            <a class="black-border" href="#welcome-section">About</a>
+                        </p>
+                         <p>
+                            <a class="black-border" href="#projects">Work</a>
+                         </p>
+                        <p>
+                            <a class="black-border" href=" ">Contact</a>
+                        </p>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <section class="welcome-section" id="welcome-section">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h1><strong>Greg Evans</strong></h1>
+                <h3><em>Aspiring Coder</em></h3>
+                <br>
+                <br>
+                <br>
+                <br>
+            </section>
+        </div>
+        <div class="project-link">
+            <section class="projects" id="projects">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p><a class="project-tile" href="https://www.freecodecamp.org/gcevans09" target="_blank" ><img src="https://media-exp1.licdn.com/dms/image/C4E03AQEa6n2BvSsU8A/profile-displayphoto-shrink_200_200/0?e=1609372800&v=beta&t=utjZ34-ZiIv1im2kFHOdLcVQ4OVAtiCZ1VYcZ4sKbvs" alt="Greg profile picture"></a>
+                    <a class="under-tile" id="profile-link" href="https://www.freecodecamp.org/gcevans09" target="_blank" >freeCodeCamp Profile</a>
+                </p>
+            </section>
+        </div>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
